@@ -1,0 +1,190 @@
+:root {
+  font-size: 14px;
+  font-family: 'Roboto Mono', monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  font-weight: inherit;
+  font-size: inherit;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+.header .logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.header .dark-toggle {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.search-form {
+  gap: 10px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  background-color: #ededed;
+  margin-bottom: 20px;
+}
+
+.search-form .fa-search {
+  font-size: 1.3rem;
+}
+
+.search-form .keyword {
+  width: 100%;
+  padding: 8px;
+  background-color: transparent;
+}
+
+.search-form .btn {
+  padding: 8px 12px;
+  border-radius: 6px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: .4s all ease;
+  transition: .4s all ease;
+}
+
+.search-form .btn:hover {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+.user-card {
+  background-color: #ededed;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.user-card .head {
+  margin-bottom: 20px;
+}
+
+.user-card .head .sub {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.user-card .head .photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.user-card .head .name {
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+}
+
+.user-card .head .joined {
+  margin-top: 8px;
+  font-size: .9rem;
+}
+
+.user-card .details .card {
+  margin-top: 18px;
+  padding: 22px;
+  background-color: white;
+  border-radius: 8px;
+  font-size: .9rem;
+  margin-bottom: 20px;
+}
+
+.user-card .details .links {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.user-card .details .links li {
+  margin-bottom: 12px;
+}
+
+.container {
+  width: 80%;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.d-flex.between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.d-flex.center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+.mb-5 {
+  margin-bottom: 5px;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 60%;
+  }
+  .user-card {
+    padding: 46px;
+  }
+  .user-card .head .sub {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .user-card .details .card {
+    font-size: 1rem;
+  }
+  .user-card .details .links {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+/*# sourceMappingURL=main.css.map */

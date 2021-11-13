@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devriskon</title>
+    <link rel="stylesheet" href="/src/css/main.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,200,300,regular,500,600,700,100italic,200italic,300italic,italic,500italic,600italic,700italic"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@4cac1a6/css/all.css" rel="stylesheet"
+        type="text/css" />
+</head>
+
+<body>
+    <div class="container">
+        <header class="header d-flex between center">
+            <h1 class="logo">Devriskon</h3>
+                <div class="dark-toggle">
+                    <i class="fas fa-moon"></i>
+                    <span>Dark</span>
+                </div>
+        </header>
+        <form class="search-form d-flex between center">
+            <i class="far fa-fw fa-search"></i>
+            <input type="text" class="keyword" placeholder="Search GitHub username">
+            <button type="submit" class="btn">Search</button>
+        </form>
+        <div class="user-card">
+            <div class="loader">Please enter your GitHub username.</div>
+        </div>
+    </div>
+
+    <script src="/src/js/app.js"></script>
+</body>
+
+</html>

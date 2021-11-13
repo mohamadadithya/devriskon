@@ -1,0 +1,182 @@
+:root {
+    font-size: 14px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+$lightColor: white;
+$lightSecondaryColor: hsl(0, 0%, 93%);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-weight: inherit;
+    font-size: inherit;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.header {
+    margin-bottom: 20px;
+
+    .logo {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .dark-toggle {
+        text-transform: uppercase;
+        letter-spacing: 5px;
+    }
+}
+
+.search-form {
+    gap: 10px;
+    padding: 12px 14px;
+    border-radius: 10px;
+    background-color: $lightSecondaryColor;
+    margin-bottom: 20px;
+
+    .fa-search {
+        font-size: 1.3rem;
+    }
+
+    .keyword {
+        width: 100%;
+        padding: 8px;
+        background-color: transparent;
+    }
+
+    .btn {
+        padding: 8px 12px;
+        border-radius: 6px;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+        transition: .4s all ease;
+
+        &:hover {
+            transform: scale(.95);
+        }
+    }
+}
+
+.user-card {
+    background-color: $lightSecondaryColor;
+    border-radius: 10px;
+    padding: 30px;
+
+    .head {
+        margin-bottom: 20px;
+
+        .sub {
+            flex-direction: column;
+        }
+
+        .photo {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        .name {
+            font-size: 1.3rem;
+            margin-bottom: 5px;
+        }
+
+        .joined {
+            margin-top: 8px;
+            font-size: .9rem;
+        }
+    }
+
+    .details {
+        .card {
+            margin-top: 18px;
+            padding: 22px;
+            background-color: $lightColor;
+            border-radius: 8px;
+            font-size: .9rem;
+            margin-bottom: 20px;
+        }
+
+        .links {
+            flex-direction: column;
+
+            li {
+                margin-bottom: 12px;
+            }
+        }
+    }
+}
+
+// Utility Classes
+
+.container {
+    width: 80%;
+}
+
+.d-flex {
+    display: flex;
+
+    &.between {
+        justify-content: space-between;
+    }
+
+    &.center {
+        align-items: center;
+    }
+}
+
+.fw-bold {
+    font-weight: bold;
+}
+
+.mb-5 {
+    margin-bottom: 5px;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+// Desktop
+@media (min-width: 992px) {
+    .container {
+        width: 60%;
+    }
+
+    .user-card {
+        padding: 46px;
+
+        .head {
+            .sub {
+                flex-direction: row;
+            }
+        }
+
+        .details {
+            .card {
+                font-size: 1rem;
+            }
+
+            .links {
+                flex-direction: row;
+            }
+        }
+    }
+}
